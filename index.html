@@ -84,7 +84,7 @@
 
         .logo span {
             font-weight: 300;
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
             font-size: 1.2rem;
         }
 
@@ -104,11 +104,11 @@
         }
 
         .nav-links a:hover {
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
         }
 
         .reserve-btn {
-            background: #b58b5c;
+            background: #8b6842; /* По-тъмен нюанс за достъпност */
             color: white !important;
             padding: 12px 28px;
             border-radius: 8px;
@@ -117,7 +117,7 @@
         }
 
         .reserve-btn:hover {
-            background: #9a7248;
+            background: #6d4f32; /* Още по-тъмен за hover */
             color: white !important;
         }
 
@@ -203,8 +203,8 @@
             margin-right: 8px;
         }
 
-        /* Контейнер */
-        .container {
+        /* Main контейнер (променено от div на main) */
+        main {
             max-width: 1200px;
             margin: 0 auto;
             padding: 60px 30px;
@@ -236,11 +236,11 @@
 
         .info-card i {
             font-size: 2.5rem;
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
             margin-bottom: 15px;
         }
 
-        .info-card h3 {
+        .info-card h2 {
             font-size: 1.3rem;
             margin-bottom: 10px;
             color: #2b5d46;
@@ -295,7 +295,7 @@
         }
 
         .highlight-item i {
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
             font-size: 1.3rem;
         }
 
@@ -316,7 +316,7 @@
         .about-image i {
             font-size: 4rem;
             margin-bottom: 20px;
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
         }
 
         /* Menu Section */
@@ -414,7 +414,7 @@
         }
 
         .feature-tag i {
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
         }
 
         /* Contact Section */
@@ -432,7 +432,7 @@
             gap: 50px;
         }
 
-        .contact-info h3 {
+        .contact-info h2 {
             font-size: 1.8rem;
             color: #2b5d46;
             margin-bottom: 25px;
@@ -453,7 +453,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
             font-size: 1.3rem;
         }
 
@@ -480,7 +480,7 @@
         }
 
         .phone-large i {
-            color: #b58b5c;
+            color: #8b6842; /* По-тъмен нюанс за достъпност */
         }
 
         .map-container {
@@ -502,7 +502,6 @@
             color: white;
             padding: 40px 30px;
             text-align: center;
-            margin-top: 40px;
         }
 
         .footer-content {
@@ -548,12 +547,12 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: #b58b5c;
+            background: #8b6842; /* По-тъмен нюанс за достъпност */
             color: white;
             padding: 15px 30px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 10px 30px rgba(181, 139, 92, 0.3);
+            box-shadow: 0 10px 30px rgba(139, 104, 66, 0.3);
             z-index: 100;
             text-decoration: none;
             border: none;
@@ -662,7 +661,7 @@
     <nav class="navbar">
         <div class="logo">ЕХО <span>При Тошко</span></div>
         
-        <button class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger" aria-label="Меню">
             <span></span>
             <span></span>
             <span></span>
@@ -688,30 +687,31 @@
         </div>
     </section>
 
-    <div class="container">
+    <!-- Main съдържание (променено от div на main) -->
+    <main>
         <!-- Quick Info Cards -->
         <div class="quick-info">
             <div class="info-card">
                 <i class="fas fa-map-pin"></i>
-                <h3>Локация</h3>
+                <h2>Локация</h2>
                 <p>ул. Черни Връх 134</p>
                 <small>до ресторант "При Тошко"</small>
             </div>
             <div class="info-card">
                 <i class="fas fa-clock"></i>
-                <h3>Работно време</h3>
+                <h2>Работно време</h2>
                 <p>Всеки ден 8:00 – 0:00</p>
                 <small>Работим без почивен ден</small>
             </div>
             <div class="info-card">
                 <i class="fas fa-phone-alt"></i>
-                <h3>Резервации</h3>
+                <h2>Резервации</h2>
                 <p>087 636 8254</p>
                 <small>Обадете се сега</small>
             </div>
             <div class="info-card">
                 <i class="fas fa-dog"></i>
-                <h3>Позволяваме</h3>
+                <h2>Позволяваме</h2>
                 <p>Домашни любимци</p>
                 <small>Кучетата са добре дошли</small>
             </div>
@@ -788,7 +788,7 @@
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="#" style="color: #b58b5c; font-weight: 600;">Виж пълното меню →</a>
+                <a href="#" style="color: #8b6842; font-weight: 600;">Виж пълното меню →</a>
             </div>
         </section>
 
@@ -804,7 +804,7 @@
         <section id="contact" class="contact-section">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Свържете се с нас</h3>
+                    <h2>Свържете се с нас</h2>
                     
                     <div class="contact-detail">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -836,14 +836,15 @@
                     
                     <div style="display: flex; gap: 15px;">
                         <a href="#" style="background: #2b5d46; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Упътвания</a>
-                        <a href="#" style="background: #b58b5c; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Обадете се</a>
+                        <a href="#" style="background: #8b6842; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Обадете се</a>
                     </div>
                 </div>
                 
                 <div>
-                    <h3 style="margin-bottom: 20px; color: #2b5d46;">Как да стигнете до нас</h3>
+                    <h2 style="margin-bottom: 20px; color: #2b5d46;">Как да стигнете до нас</h2>
                     <div class="map-container">
                         <iframe 
+                            title="Карта с местоположението на ресторант ЕХО"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1716.157669161!2d23.157747274851015!3d42.586954266283094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aacd3aa80e9fe3%3A0xc5a83c88b0b0d9e0!2z0KDQtdGB0YLQvtGA0LDQvdGCICLQldCl0J4i!5e1!3m2!1sbg!2sbg!4v1772607335089!5m2!1sbg!2sbg" 
                             allowfullscreen="" 
                             loading="lazy"
@@ -853,7 +854,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
