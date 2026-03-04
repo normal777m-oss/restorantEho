@@ -16,7 +16,7 @@
     <!-- Meta Author -->
     <meta name="author" content="Ресторант ЕХО">
     
-    <!-- Open Graph tags (за споделяне във Facebook) -->
+    <!-- Open Graph tags -->
     <meta property="og:title" content="Ресторант ЕХО (При Тошко) - с. Рударци">
     <meta property="og:description" content="Домашно приготвена храна, скара и супи. Уютна атмосфера, външна част, паркинг.">
     <meta property="og:type" content="restaurant">
@@ -48,7 +48,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #faf7f2;
-            color: #2c2c2c;
+            color: #1e1e1e; /* По-тъмен текст за по-добър контраст */
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -77,14 +77,14 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 800;
-            color: #2b5d46;
+            color: #1e4a3a; /* По-тъмно зелено */
             letter-spacing: -0.5px;
             z-index: 1001;
         }
 
         .logo span {
             font-weight: 300;
-            color: #8b6842;
+            color: #6b4a2e; /* По-тъмно кафяво */
             font-size: 1.2rem;
         }
 
@@ -97,18 +97,18 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #2c2c2c;
+            color: #1e1e1e; /* Черен текст за максимален контраст */
             font-weight: 500;
             transition: color 0.3s;
             font-size: 1rem;
         }
 
         .nav-links a:hover {
-            color: #8b6842;
+            color: #6b4a2e;
         }
 
         .reserve-btn {
-            background: #8b6842;
+            background: #6b4a2e; /* По-тъмно кафяво */
             color: white !important;
             padding: 12px 28px;
             border-radius: 8px;
@@ -117,11 +117,10 @@
         }
 
         .reserve-btn:hover {
-            background: #6d4f32;
+            background: #4e3621; /* Още по-тъмно */
             color: white !important;
         }
 
-        /* Facebook бутон в навигацията */
         .facebook-nav-btn {
             background: #1877f2;
             color: white !important;
@@ -135,7 +134,7 @@
         }
 
         .facebook-nav-btn:hover {
-            background: #166fe5 !important;
+            background: #0e5cb3 !important;
             color: white !important;
         }
 
@@ -157,7 +156,7 @@
         .hamburger span {
             width: 25px;
             height: 3px;
-            background: #2b5d46;
+            background: #1e4a3a;
             margin: 3px 0;
             transition: 0.4s;
             border-radius: 3px;
@@ -213,11 +212,12 @@
         }
 
         .hero-stat {
-            background: rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.6); /* По-тъмен фон за по-добър контраст */
             backdrop-filter: blur(10px);
             padding: 12px 25px;
             border-radius: 8px;
             font-weight: 500;
+            color: white;
         }
 
         .hero-stat i {
@@ -236,7 +236,7 @@
             padding: 60px 30px;
         }
 
-        /* Quick Info Cards */
+        /* Quick Info Cards - подобрен контраст */
         .quick-info {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -262,7 +262,7 @@
 
         .info-card i {
             font-size: 2.5rem;
-            color: #8b6842;
+            color: #6b4a2e; /* По-тъмно кафяво */
             margin-bottom: 15px;
         }
 
@@ -273,18 +273,21 @@
         .info-card h2 {
             font-size: 1.3rem;
             margin-bottom: 10px;
-            color: #2b5d46;
+            color: #1e4a3a; /* По-тъмно зелено */
             font-weight: 600;
         }
 
         .info-card p {
             font-size: 1.1rem;
-            color: #4a4a4a;
+            color: #1e1e1e; /* Черен текст */
+            font-weight: 500;
         }
 
         .info-card small {
-            color: #888;
+            color: #4a4a4a; /* Тъмносив - достатъчно контрастен */
             font-size: 0.9rem;
+            display: block;
+            margin-top: 8px;
         }
 
         .info-card .facebook-link {
@@ -317,6 +320,7 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+            color: white;
         }
 
         .facebook-section h2 i {
@@ -327,6 +331,7 @@
             font-size: 1.2rem;
             margin-bottom: 30px;
             opacity: 0.95;
+            color: white;
         }
 
         .facebook-stats {
@@ -344,6 +349,7 @@
             border-radius: 50px;
             font-size: 1.2rem;
             font-weight: 600;
+            color: white;
         }
 
         .facebook-stat i {
@@ -386,13 +392,13 @@
         .about-content h2 {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #2b5d46;
+            color: #1e4a3a;
             margin-bottom: 25px;
             line-height: 1.2;
         }
 
         .about-content p {
-            color: #4a4a4a;
+            color: #1e1e1e;
             margin-bottom: 20px;
             font-size: 1.1rem;
         }
@@ -409,10 +415,11 @@
             align-items: center;
             gap: 12px;
             font-weight: 500;
+            color: #1e1e1e;
         }
 
         .highlight-item i {
-            color: #8b6842;
+            color: #6b4a2e;
             font-size: 1.3rem;
         }
 
@@ -424,7 +431,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #5e4e3a;
+            color: #1e1e1e;
             font-size: 1.2rem;
             text-align: center;
             padding: 20px;
@@ -433,7 +440,7 @@
         .about-image i {
             font-size: 4rem;
             margin-bottom: 20px;
-            color: #8b6842;
+            color: #6b4a2e;
         }
 
         /* Menu Section */
@@ -448,13 +455,13 @@
 
         .section-title h2 {
             font-size: 2.5rem;
-            color: #2b5d46;
+            color: #1e4a3a;
             font-weight: 700;
             margin-bottom: 15px;
         }
 
         .section-title p {
-            color: #666;
+            color: #4a4a4a;
             font-size: 1.1rem;
             max-width: 600px;
             margin: 0 auto;
@@ -484,7 +491,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #7a6852;
+            color: #4a4a4a;
         }
 
         .menu-item-image i {
@@ -498,16 +505,16 @@
         .menu-item-header h3 {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #2b5d46;
+            color: #1e4a3a;
             margin-bottom: 10px;
         }
 
         .menu-item-desc {
-            color: #666;
+            color: #4a4a4a;
             font-size: 0.95rem;
         }
 
-        /* Features Tags */
+        /* Features Tags - подобрен контраст */
         .features {
             display: flex;
             flex-wrap: wrap;
@@ -522,16 +529,16 @@
             padding: 12px 28px;
             font-size: 1.1rem;
             font-weight: 500;
-            color: #2b5d46;
+            color: #1e1e1e;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            border: 1px solid #e8ddd0;
+            border: 1px solid #d4c5b4;
         }
 
         .feature-tag i {
-            color: #8b6842;
+            color: #6b4a2e;
         }
 
         /* Contact Section */
@@ -551,7 +558,7 @@
 
         .contact-info h2 {
             font-size: 1.8rem;
-            color: #2b5d46;
+            color: #1e4a3a;
             margin-bottom: 25px;
         }
 
@@ -570,7 +577,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #8b6842;
+            color: #6b4a2e;
             font-size: 1.3rem;
         }
 
@@ -578,22 +585,23 @@
             color: #1877f2;
         }
 
-        .contact-text h4 {
+        .contact-text h3 {
             font-size: 1.1rem;
-            color: #666;
-            font-weight: 400;
+            color: #4a4a4a;
+            font-weight: 500;
+            margin-bottom: 4px;
         }
 
         .contact-text p {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #2c2c2c;
+            color: #1e1e1e;
         }
 
         .phone-large {
             font-size: 2rem;
             font-weight: 700;
-            color: #2b5d46;
+            color: #1e4a3a;
             margin: 30px 0;
             display: flex;
             align-items: center;
@@ -601,7 +609,7 @@
         }
 
         .phone-large i {
-            color: #8b6842;
+            color: #6b4a2e;
         }
 
         .map-container {
@@ -617,9 +625,9 @@
             border: 0;
         }
 
-        /* Footer */
+        /* Footer - подобрен контраст */
         .footer {
-            background: #2b5d46;
+            background: #1e4a3a; /* По-тъмно зелено */
             color: white;
             padding: 40px 30px;
             text-align: center;
@@ -635,6 +643,7 @@
             font-weight: 700;
             margin-bottom: 20px;
             letter-spacing: -0.5px;
+            color: white;
         }
 
         .footer-links {
@@ -646,13 +655,15 @@
         }
 
         .footer-links a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.9);
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
 
         .footer-links a:hover {
             color: white;
+            text-decoration: underline;
         }
 
         .social-links {
@@ -680,8 +691,13 @@
             transform: translateY(-3px);
         }
 
+        .footer p {
+            color: rgba(255,255,255,0.9);
+            margin: 10px 0;
+        }
+
         .copyright {
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.7);
             font-size: 0.9rem;
             margin-top: 30px;
         }
@@ -693,12 +709,12 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: #8b6842;
+            background: #6b4a2e;
             color: white;
             padding: 15px 30px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 10px 30px rgba(139, 104, 66, 0.3);
+            box-shadow: 0 10px 30px rgba(107, 74, 46, 0.3);
             z-index: 100;
             text-decoration: none;
             border: none;
@@ -739,6 +755,7 @@
 
             .nav-links a {
                 font-size: 1.2rem;
+                color: #1e1e1e;
             }
 
             .reserve-btn, .facebook-nav-btn {
@@ -857,7 +874,7 @@
                 <i class="fas fa-map-pin"></i>
                 <h2>Локация</h2>
                 <p>ул. Черни Връх 134</p>
-                <small>спирка Ехо, с. Рударци</small>
+                <small>до ресторант "При Тошко"</small>
             </div>
             <div class="info-card">
                 <i class="fas fa-clock"></i>
@@ -879,7 +896,7 @@
             </div>
         </div>
 
-        <!-- Facebook секция (акцентирана) -->
+        <!-- Facebook секция -->
         <div class="facebook-section">
             <h2><i class="fab fa-facebook"></i> Намерете ни във Facebook</h2>
             <p>Следете ни за актуални предложения, снимки и новини!</p>
@@ -964,7 +981,7 @@
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="#" style="color: #8b6842; font-weight: 600;">Виж пълното меню →</a>
+                <a href="#" style="color: #6b4a2e; font-weight: 600;">Виж пълното меню →</a>
             </div>
         </section>
 
@@ -986,7 +1003,7 @@
                     <div class="contact-detail">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="contact-text">
-                            <h4>Адрес</h4>
+                            <h3>Адрес</h3>
                             <p>ул. Черни връх, спирка Ехо, с. Рударци</p>
                         </div>
                     </div>
@@ -994,7 +1011,7 @@
                     <div class="contact-detail">
                         <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                         <div class="contact-text">
-                            <h4>Телефон</h4>
+                            <h3>Телефон</h3>
                             <p>087 636 8254</p>
                         </div>
                     </div>
@@ -1002,7 +1019,7 @@
                     <div class="contact-detail">
                         <div class="contact-icon"><i class="fab fa-facebook"></i></div>
                         <div class="contact-text">
-                            <h4>Facebook</h4>
+                            <h3>Facebook</h3>
                             <p>@ehomes99</p>
                         </div>
                     </div>
@@ -1012,8 +1029,8 @@
                     </div>
                     
                     <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                        <a href="#" style="background: #2b5d46; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Упътвания</a>
-                        <a href="tel:0876368254" style="background: #8b6842; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Обадете се</a>
+                        <a href="#" style="background: #1e4a3a; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Упътвания</a>
+                        <a href="tel:0876368254" style="background: #6b4a2e; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none;">Обадете се</a>
                         <a href="https://www.facebook.com/ehomes99" target="_blank" style="background: #1877f2; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
                             <i class="fab fa-facebook"></i> Facebook
                         </a>
@@ -1021,7 +1038,7 @@
                 </div>
                 
                 <div>
-                    <h2 style="margin-bottom: 20px; color: #2b5d46;">Как да стигнете до нас</h2>
+                    <h2 style="margin-bottom: 20px; color: #1e4a3a;">Как да стигнете до нас</h2>
                     <div class="map-container">
                         <iframe 
                             title="Карта с местоположението на ресторант ЕХО"
@@ -1065,7 +1082,7 @@
         <i class="fas fa-phone-alt"></i> Обадете се сега
     </a>
 
-    <!-- JavaScript за Hamburger меню -->
+    <!-- JavaScript -->
     <script>
         // Hamburger меню функционалност
         const hamburger = document.getElementById('hamburger');
